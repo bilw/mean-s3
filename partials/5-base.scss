@@ -1,0 +1,36 @@
+$black: #000;
+$white: #FFF;
+$banana: #fad46b;
+$theblackflag: #364347;
+$firstblood: #cc0000;
+$strawberry: #f84545;
+$babyblue: #e1eef3;
+$gray: #f7f7f7;
+$darkgray: #5e5e5e;
+$lightgray: #a1a1a1;
+$verylightgray: #b2c6cd;
+$landlubber: #28948c;
+$overboard: #009dcd;
+ 
+$padding: 10px;
+$margin: 10px;
+$main-width: 1000px;
+ 
+$font-size: 14px;
+$font-family: 'Lato', sans-serif;
+$line-height: 1.4;
+ 
+$break-four: 1050px;
+$break-three: 760px;
+$break-two: 520px;
+$break-one: 360px;
+ 
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('normalize.css');
+ 
+//clearfix - see http://nicolasgallagher.com/micro-clearfix-hack/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

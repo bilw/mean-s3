@@ -1,0 +1,68 @@
+// left side menus
+.menus {
+    text-align: center;
+
+    @media screen and (min-width: $break-three) {
+        padding: $padding*2 $padding*3;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 120%;
+        font-weight: normal;
+        padding-left: $padding*2.5;
+        cursor: pointer;
+        width: 20%;
+        margin: $margin*2 $margin*11 $margin;
+
+        @media screen and (min-width: $break-one) {
+            margin: $margin*2 auto $margin*2;
+        }
+
+        @media screen and (min-width: $break-three) {
+            margin: $margin*2 0 $margin 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 18px;
+            display: block;
+            background: url(images/nav-sprite.png) no-repeat;
+
+            @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
+                background: url(images/nav-sprite@2x.png) no-repeat;
+                background-size: 49px 18px;
+            }
+        }
+
+        &.work {
+            color: $strawberry;
+
+            &:before {
+                width: 15px;
+                background-position: 0px 0px;
+            }
+        }
+
+        &.about {
+            color: $landlubber;
+
+            &:before {
+                width: 17px;
+                background-position: -15px 0px;
+            }
+        }
+
+        &.contact {
+            color: $overboard;
+
+            &:before {
+                width: 17px;
+                background-position: -32px 0px;
+            }
+        }
+    }
+}

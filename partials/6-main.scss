@@ -1,0 +1,20 @@
+//Main styles
+* {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+html, body, .wrap {
+    min-height: 100%;
+}
+ 
+body {
+    color: $theblackflag;
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height;
+    background: $banana;
+}

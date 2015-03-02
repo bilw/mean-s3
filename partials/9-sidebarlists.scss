@@ -1,0 +1,47 @@
+// menu lists
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin: 0 $margin*13.5 $margin;
+    text-align: left;
+
+    @media screen and (min-width: $break-three) {
+        margin: 0 0 0 $margin*2.5;
+        display: block;
+        width: auto;
+    }
+
+    &.open {
+        display: inline-block;
+        margin: 0 auto $margin $margin*6;
+
+        @media screen and (min-width: $break-three) {
+            margin: 0 0 0 $margin*2.5;
+            display: block;
+            width: auto;
+        }
+    }
+
+    li {
+        a {
+            color: $theblackflag;
+            text-decoration: none;
+            -webkit-transition: color 0.4s ease;
+            -moz-transition: color 0.4s ease;
+            -o-transition: color 0.4s ease;
+            -ms-transition: color 0.4s ease;
+            transition: color 0.4s ease;
+
+            &:hover, &.current-menu-item {
+                color: $strawberry;
+                -webkit-transition: color 0.4s ease;
+                -moz-transition: color 0.4s ease;
+                -o-transition: color 0.4s ease;
+                -ms-transition: color 0.4s ease;
+                transition: color 0.4s ease;
+            }
+        }
+    }
+}

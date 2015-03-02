@@ -1,0 +1,26 @@
+    // inside content styles at end
+    .portfolio-image {
+        padding: $padding*2;
+        background: $white;
+        border-left: 1px solid darken($gray, 10%);
+        text-align: center;
+
+        @media screen and (min-width: $break-three) {
+            float: left;
+            width: 70%;
+        }
+
+        img {
+            width: 100%;
+            max-width: 610px;
+            height: auto;
+        }
+
+        div.loading {
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
